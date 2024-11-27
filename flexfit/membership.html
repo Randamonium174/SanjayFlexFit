@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Your Plan</title>
+    <link rel="stylesheet" href="memb.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="gymlogo.png" alt="Logo" class="logo-img">
+            <span>Fix Your Plan</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="program.html">Plans</a></li>
+            
+            <li><a href="#contact">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Title -->
+    <h1 class="main-title">Fix Your Plan For The First Step</h1>
+
+    <!-- Membership Plans Section -->
+    <div class="membership-container" id="plans">
+        <!-- Flex Starter Plan -->
+        <div class="membership-card" data-plan="flexStarter">
+            <img src="mem.jpg" alt="Flex Starter" class="membership-image">
+            <h3>Flex Starter</h3>
+            <p>1-Month Plan</p>
+            <p>RS 599</p>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <!-- Strength Builder Plan -->
+        <div class="membership-card" data-plan="strengthBuilder">
+            <img src="mem2.jpg" alt="Strength Builder" class="membership-image">
+            <h3>Strength Builder</h3>
+            <p>3-Month Plan</p>
+            <p>RS 1299</p>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <!-- Power Surge Plan -->
+        <div class="membership-card" data-plan="powerSurge">
+            <img src="mem3.jpg" alt="Power Surge" class="membership-image">
+            <h3>Power Surge</h3>
+            <p>6-Month Plan</p>
+            <p>RS 2099</p>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <!-- Peak Performance Plan -->
+        <div class="membership-card" data-plan="peakPerformance">
+            <img src="mem4.jpg" alt="Peak Performance" class="membership-image">
+            <h3>Peak Performance</h3>
+            <p>12-Month Plan</p>
+            <p>RS 5555</p>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div class="modal" id="membershipModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="planTitle"></h2>
+            <div id="planDescription"></div>
+            <p id="planPrice"></p>
+
+            <!-- Payment options appear once the user clicks Subscribe -->
+            <div id="paymentOptions" style="display:none;">
+                <p>Choose your payment method:</p>
+                <button>Google Pay</button>
+                <button>Paytm</button>
+                <button>Credit Card</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fix Your Plan. All rights reserved.</p>
+    </footer>
+
+    <script src="memb.js"></script>
+</body>
+</html>

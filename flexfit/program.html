@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Fit Programs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1e1e1e; /* Dark grey background */
+            color: #f5f5f5; /* Light grey text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #2b2b2b;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .navbar img {
+            height: 50px;
+            width: auto;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            background-color: transparent;
+            color: #f5f5f5;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            font-size: 1rem;
+            transition: color 0.3s, box-shadow 0.3s, border-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .navbar a:hover {
+            color: #ffd700; /* Yellow */
+            border-color: #ffd700;
+            box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+        }
+
+        /* Title styling */
+        .title {
+            font-size: 2rem;
+            color: #ffd700; /* Yellow */
+            margin-top: 80px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Zigzag layout container */
+        .program-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin-bottom: 60px;
+        }
+
+        /* Individual card styling */
+        .program-card {
+            display: flex;
+            background-color: #2b2b2b;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px 5px #ffd700; /* Yellow */
+        }
+
+        /* Left and right alternating layouts */
+        .program-card:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .program-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        /* Image styling */
+        .program-card img {
+            width: 250px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Description box styling */
+        .description-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            color: #f5f5f5;
+        }
+
+        .description-box h2 {
+            font-size: 1.5rem;
+            color: #ffd700; /* Yellow */
+            margin-bottom: 10px;
+        }
+
+        .description-box p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+
+        /* Button styling with glow effect */
+        .signup-btn {
+            background-color: #ffd700; /* Yellow */
+            color: #1e1e1e; /* Dark grey text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: box-shadow 0.3s ease;
+            align-self: start;
+            text-decoration: none;
+        }
+
+        .signup-btn:hover {
+            box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+        }
+
+        /* Footer styling */
+        .footer {
+            width: 100%;
+            background-color: #2b2b2b;
+            padding: 15px 0;
+            text-align: center;
+            color: #f5f5f5;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="gymlogo.png" alt="Flex Fit Logo">
+        <div class="navbar-links">
+            <a href="home.html">Home</a>
+            <a href="#support">Support</a>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <h1 class="title">Join Our Programs</h1>
+
+    <!-- Program Cards Container -->
+    <div class="program-container">
+        <!-- Card 1: Weight Gain -->
+        <div class="program-card">
+            <img src="pro1.jpg" alt="Weight Gain Program Image">
+            <div class="description-box">
+                <h2>Weight Gain</h2>
+                <p>Designed to help you gain weight safely and effectively through balanced nutrition and targeted exercises.</p>
+                <a href="plan1.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Card 2: Weight Loss -->
+        <div class="program-card">
+            <img src="pro2.jpg" alt="Weight Loss Program Image">
+            <div class="description-box">
+                <h2>Weight Loss</h2>
+                <p>A personalized program focused on sustainable weight loss through healthy eating and fitness routines.</p>
+                <a href="plan2.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Card 3: Muscle Gain -->
+        <div class="program-card">
+            <img src="pro3.jpg" alt="Muscle Gain Program Image">
+            <div class="description-box">
+                <h2>Muscle Gain</h2>
+                <p>Build muscle mass with our specialized strength training and muscle-building nutrition plan.</p>
+                <a href="plan3.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- Card 4: Fat Loss -->
+        <div class="program-card">
+            <img src="plan5.jpg" alt="Fat Loss Program Image">
+            <div class="description-box">
+                <h2>Fat Loss</h2>
+                <p>Reduce body fat and improve muscle definition with effective cardio and strength routines.</p>
+                <a href="plan4.html" class="signup-btn">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Flex Fit. All rights reserved.
+    </div>
+
+</body>
+</html>

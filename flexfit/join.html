@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexFit Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #333; /* Dark Grey */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            color: #FFD700; /* Yellow */
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar .nav-links li {
+            margin: 0 15px;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #FFD700; /* Yellow on hover */
+        }
+
+        /* Video Section */
+        .video-section {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+        }
+
+        .video-section video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .video-overlay h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .video-overlay p {
+            font-size: 1.5em;
+        }
+
+        /* Community Description Section */
+        .community-description {
+            padding: 50px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .community-description h2 {
+            font-size: 2em;
+            color: #FFD700; /* Yellow */
+        }
+
+        .community-description ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .community-description li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .cta-button {
+            background-color: #FFD700; /* Yellow */
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .cta-button:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333; /* Dark Grey */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            color: #FFD700; /* Yellow on hover */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="gymlogo.png" class="logo">FlexFit</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Video Background Section -->
+    <section class="video-section">
+        <div class="video-overlay">
+            <h1>Welcome to the FlexFit Community</h1>
+            <p>Join a vibrant and supportive fitness community that helps you reach your goals.</p>
+        </div>
+        <!-- Replace the URL below with your actual video URL -->
+        <video autoplay loop muted>
+            <source src="https://youtu.be/GMMsCZ-fynI" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Community Description Section -->
+    <section class="community-description">
+        <div class="container">
+            <h2>Why FlexFit?</h2>
+            <p>The FlexFit community is built on the foundation of motivation, support, and inclusivity. Whether you're just starting your fitness journey or you're a seasoned athlete, you'll find a space where you can grow, learn, and succeed.</p>
+            <h3>Benefits of the FlexFit Community:</h3>
+            <ul>
+                <li><strong>Expert Coaching:</strong> Our certified trainers lead diverse workout programs to suit all fitness levels.</li>
+                <li><strong>Motivational Environment:</strong> The FlexFit community is all about encouraging each other to reach new fitness goals and achieve personal bests.</li>
+                <li><strong>Exclusive Events:</strong> Participate in monthly fitness challenges, group workouts, and social meet-ups.</li>
+                <li><strong>Personalized Fitness Plans:</strong> Receive tailored workout plans and fitness tracking to suit your specific goals and progress.</li>
+                <li><strong>Global Network:</strong> No matter where you are, FlexFit connects you with like-minded individuals who share your passion for fitness.</li>
+            </ul>
+            <p>Ready to get started? <a href="#join-now" class="cta-button">Join Now</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FlexFit. All rights reserved.</p>
+            
+        </div>
+    </footer>
+
+</body>
+</html>
